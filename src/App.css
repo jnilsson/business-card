@@ -1,38 +1,124 @@
+#root {
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
 .App {
+  background-color: #111;
+  width: 360px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  color: #fff;
+  border-radius: 12px;
+}
+
+.info {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.info--picture {
+  position: relative;
+  margin-left: -20px;
+  width: calc(100% + 40px);
+  border-radius: 12px 12px 0px 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.info--name {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.info--title {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.info--link {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.info--button--container {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.info--button {
+  width: calc(50% - 10px);
+  background-color: #fff;
+  border: 0px solid #fff;
+  border-radius: 5px;
+  height: 40px;
+  transition: all ease 0.3s;
+}
+
+.info--button:hover {
+  opacity: 0.6;
+  transition: all ease 0.3s;
+}
+
+.info--button--xing {
+  background-color: aquamarine;
+  border: 0px solid aquamarine;
+}
+
+.info--button a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.info--button i {
+  margin-right: 10px;
+}
+
+.info--button:first-child {
+  margin-right: 20px;
+}
+
+.about {
+  margin-top: 40px;
+}
+
+.interests {
+  margin-top: 20px;
+}
+
+.about h3,
+.interests h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.about p,
+.interests p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-top: 5px
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #000;
+  margin-left: -20px;
+  border-radius: 0px 0px 12px 12px;
+  height: 60px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  font-size: 20px;
+  color: #888;
 }
